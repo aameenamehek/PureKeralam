@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pure Keralam – Coconut Oil &amp; Traditional Snacks</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Outfit:wght@300;400;600&family=Caveat:wght@600&display=swap">
+<style>
+:root{--bg:#fff6dc;--bg2:#ffeab0;--ink:#2b1a08;--soft:#6b4c1e;--gold:#d99a0b;--gold2:#f3c13a;--card:#fffdf4;--dark:#2b1a08;--onDark:#ffe9a8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1408;--bg2:#2a1d0b;--ink:#fbeab8;--soft:#d3b373;--card:#2e2110;--dark:#0f0a04;--onDark:#ffe9a8}}
+:root[data-theme="dark"]{--bg:#1d1408;--bg2:#2a1d0b;--ink:#fbeab8;--soft:#d3b373;--card:#2e2110;--dark:#0f0a04;--onDark:#ffe9a8}
+*{box-sizing:border-box;margin:0}html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Outfit,system-ui,sans-serif;font-weight:300;line-height:1.65}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3,.logo{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.1}
+.script{font-family:Caveat,cursive;color:var(--gold);font-size:1.6rem}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 5vw;background:var(--bg);border-bottom:1px solid var(--gold)}
+.logo{font-size:1.3rem;letter-spacing:.14em;color:var(--ink);text-decoration:none}.logo b{color:var(--gold)}
+nav{display:flex;gap:6px;flex-wrap:wrap}nav a{padding:8px 16px;border-radius:99px;text-decoration:none;color:var(--ink);font-weight:400;font-size:.95rem}
+nav a.on,nav a:hover{background:var(--gold);color:#2b1a08}
+.btn{display:inline-block;padding:14px 28px;border-radius:99px;background:var(--dark);color:var(--onDark);text-decoration:none;font-weight:600;border:2px solid var(--dark);transition:.25s}
+.btn:hover{transform:translateY(-3px);background:var(--gold2);color:#2b1a08;border-color:var(--gold2)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.view{display:none}.view.on{display:block;animation:in .6s ease}
+@keyframes in{from{opacity:0;transform:translateY(14px)}}
+.hero{position:relative;overflow:hidden;padding:12vh 5vw 10vh;background:radial-gradient(circle at 80% 20%,var(--gold2),transparent 55%),linear-gradient(160deg,var(--bg2),var(--gold) 140%);display:grid;grid-template-columns:1.2fr .8fr;gap:5vw;align-items:center;min-height:78vh}
+.hero h1{font-size:clamp(2.8rem,7.5vw,6rem);margin:8px 0 20px}.hero h1 i{font-weight:500;color:var(--gold)}
+.hero p{max-width:34em;font-size:1.15rem;color:var(--soft);margin-bottom:30px}
+.coin{aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff3b8,var(--gold2) 40%,var(--gold) 75%,#8f5f00);box-shadow:0 30px 80px rgba(120,70,0,.4),inset 0 0 0 14px rgba(255,255,255,.18);display:grid;place-items:center;text-align:center;color:#2b1a08;animation:float 6s ease-in-out infinite;max-width:380px;width:100%;justify-self:center}
+.coin div{font-family:Fraunces,serif;font-size:clamp(1.6rem,4vw,2.6rem);font-weight:700;line-height:1.05}.coin small{display:block;font-family:Caveat,cursive;font-size:1.6rem;font-weight:600}
+@keyframes float{50%{transform:translateY(-16px) rotate(3deg)}}
+section{padding:9vh 5vw}.wrap{max-width:1100px;margin:auto}
+.marquee{background:var(--dark);color:var(--onDark);overflow:hidden;white-space:nowrap;padding:16px 0;font-family:Fraunces,serif;font-style:italic;font-size:1.25rem}
+.marquee span{display:inline-block;padding-left:100%;animation:m 28s linear infinite}@keyframes m{to{transform:translateX(-100%)}}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:center}
+h2{font-size:clamp(2rem,4.5vw,3.4rem);margin:6px 0 18px}
+.stat{background:var(--card);border:1px solid var(--gold);border-radius:28px;padding:36px;box-shadow:8px 8px 0 var(--gold)}
+.stat h3{font-size:3.6rem;color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px;margin-top:34px}
+.card{background:var(--card);border:1px solid color-mix(in srgb,var(--gold) 55%,transparent);border-radius:24px;padding:26px;display:flex;flex-direction:column;gap:10px;transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(150,95,0,.25);border-color:var(--gold)}
+.dot{width:54px;height:54px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff1a8,var(--gold));display:grid;place-items:center;font-family:Fraunces,serif;font-weight:700;font-size:1.3rem;color:#2b1a08}
+.card h3{font-size:1.3rem}.price{font-weight:600;color:var(--gold)}.tag{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.card .btn{margin-top:auto;padding:10px 18px;font-size:.9rem;text-align:center}
+.feature{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#2b1a08;border-radius:32px;padding:44px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+.feature .btn{background:#2b1a08;color:#ffe9a8;border-color:#2b1a08}
+.band{background:var(--bg2)}
+.contact{background:var(--card);border:1px solid var(--gold);border-radius:32px;padding:44px;text-align:center;box-shadow:10px 10px 0 var(--gold)}
+.contact h3{font-size:2.6rem;margin:10px 0 24px;color:var(--gold)}
+footer{background:var(--dark);color:var(--onDark);text-align:center;padding:40px 5vw}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:25;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+@media(max-width:760px){.hero,.split,.feature{grid-template-columns:1fr}.coin{max-width:240px}header{flex-direction:column}}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.13;background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 300'><path d='M100 300 Q95 200 110 110' stroke='%23b07a0a' stroke-width='9' fill='none'/><g fill='%23b07a0a'><path d='M110 110 Q60 70 10 100 Q70 80 110 110Z'/><path d='M110 110 Q70 40 30 30 Q85 55 110 110Z'/><path d='M110 110 Q110 40 120 10 Q135 60 110 110Z'/><path d='M110 110 Q150 50 195 50 Q150 75 110 110Z'/><path d='M110 110 Q160 90 195 125 Q150 105 110 110Z'/></g></svg>") left bottom/240px no-repeat,url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 300'><path d='M100 300 Q95 200 110 110' stroke='%23b07a0a' stroke-width='9' fill='none'/><g fill='%23b07a0a'><path d='M110 110 Q60 70 10 100 Q70 80 110 110Z'/><path d='M110 110 Q70 40 30 30 Q85 55 110 110Z'/><path d='M110 110 Q110 40 120 10 Q135 60 110 110Z'/><path d='M110 110 Q150 50 195 50 Q150 75 110 110Z'/><path d='M110 110 Q160 90 195 125 Q150 105 110 110Z'/></g></svg>") right bottom/300px no-repeat}
+.kasavu{height:24px;background:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='24'><path d='M14 4 L24 12 L14 20 L4 12Z' fill='%23d99a0b'/><circle cx='14' cy='12' r='2' fill='%23fff6dc'/></svg>") repeat-x center,linear-gradient(var(--gold),var(--gold)) top/100% 3px no-repeat,linear-gradient(var(--gold),var(--gold)) bottom/100% 3px no-repeat,var(--bg2)}
+.scene{width:100%;display:block;border-radius:32px;border:1px solid var(--gold);box-shadow:10px 10px 0 var(--gold)}
+.pic{aspect-ratio:4/3;border-radius:18px;background:radial-gradient(circle at 50% 40%,#fff6cf,var(--gold2));display:grid;place-items:center}.pic svg{width:80%;height:88%}
+.f{display:grid;gap:14px;margin-bottom:22px;text-align:left}.f input,.f textarea{font:inherit;padding:14px 18px;border-radius:16px;border:1px solid var(--gold);background:var(--bg);color:var(--ink)}
+.coin svg{width:100%;height:100%;border-radius:50%}.desc{font-size:.92rem;color:var(--soft);line-height:1.5}.pic{box-shadow:inset 0 0 0 5px rgba(47,122,74,.35)}
+.pricetag{display:inline-flex;flex-direction:column;align-items:flex-start;background:#2b1a08;border-radius:24px;padding:14px 30px 16px;margin:0 0 26px;box-shadow:0 0 0 3px var(--gold2),0 12px 40px rgba(217,154,11,.5);animation:pulse 2.4s ease-in-out infinite}.pricetag small{color:#ffe9a8;letter-spacing:.14em;text-transform:uppercase;font-weight:600;font-size:.8rem}.pricetag b{font-family:Fraunces,serif;font-size:clamp(3.6rem,10vw,6.5rem);line-height:1;color:#ffe45c;text-shadow:0 0 26px rgba(255,228,92,.7)}.pricetag span{color:#fff;font-weight:600}@keyframes pulse{50%{transform:scale(1.04)}}
+.deal{display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center;background:linear-gradient(135deg,#d62d20,#f0561d);color:#fff;border-radius:32px;padding:44px;box-shadow:10px 10px 0 #2b1a08}.deal h2{margin:6px 0 14px}.deal .script{color:#ffe45c}.big{font-family:Fraunces,serif;font-weight:700;font-size:clamp(4rem,12vw,8rem);line-height:1;color:#ffe45c;text-shadow:0 0 30px rgba(255,228,92,.6);text-align:center}.big small{display:block;font-family:Outfit,sans-serif;font-weight:600;font-size:1.2rem;color:#fff;text-shadow:none}
+.card:first-child .price{font-family:Fraunces,serif;font-size:2.6rem;line-height:1;color:#d62d20}
+@media(max-width:760px){.deal{grid-template-columns:1fr;padding:30px}}
+</style></head>
+<body>
+<header><a class="logo" href="#home">PURE <b>KERALAM</b></a>
+<nav><a href="#home" data-v="home">Home</a><a href="#products" data-v="products">Products</a><a href="#contact" data-v="contact">Contact</a></nav></header><div class="kasavu"></div>
+
+<main>
+<div class="view" id="home">
+<div class="hero"><div><span class="script">straight from God’s own country</span>
+<h1>Golden oil. <i>Honest</i> snacks.</h1>
+<p>Coconut oil and traditional Kerala snacks, made the way the coast has always made them. Order in one message on WhatsApp.</p>
+<div class="pricetag"><small>Coconut oil · 1 litre</small><b>₹400</b><span>Affordable price</span></div><br><a class="btn" href="#products">Explore products</a> <a class="btn ghost" href="#contact">Place an order</a></div>
+<div class="coin"><svg viewBox="0 0 400 400" role="img" aria-label="Coconut oil bottle with coconuts and palm leaves"><g fill="#2f7a4a"><path d="M200 170Q110 50 30 110Q120 90 200 170Z"/><path d="M200 170Q140 30 70 20Q150 60 200 170Z"/><path d="M200 170Q260 30 330 20Q250 60 200 170Z"/><path d="M200 170Q290 50 370 110Q280 90 200 170Z"/></g><g fill="#1f5a33"><path d="M200 170Q120 130 50 190Q130 150 200 170Z"/><path d="M200 170Q280 130 350 190Q270 150 200 170Z"/></g><rect x="178" y="70" width="44" height="26" rx="5" fill="#6b4a1e"/><path d="M182 96h36v34q42 22 42 70v110q0 18-18 18H158q-18 0-18-18V200q0-48 42-70Z" fill="#f7d35a" stroke="#8a4b08" stroke-width="3"/><path d="M160 200q0-30 24-46" stroke="#fff3b8" stroke-width="7" fill="none" stroke-linecap="round"/><rect x="156" y="215" width="88" height="80" rx="8" fill="#fff6dc" stroke="#8a4b08" stroke-width="2"/><text x="200" y="243" text-anchor="middle" font-family="Fraunces,serif" font-weight="700" font-size="18" fill="#2b1a08">PURE</text><text x="200" y="264" text-anchor="middle" font-family="Fraunces,serif" font-weight="700" font-size="15" fill="#b97a00">KERALAM</text><text x="200" y="285" text-anchor="middle" font-family="Outfit,sans-serif" font-size="12" fill="#2b1a08">1 litre · ₹400</text><circle cx="92" cy="330" r="46" fill="#6b4a1e"/><g fill="#a77a3a"><circle cx="80" cy="318" r="5"/><circle cx="98" cy="314" r="5"/><circle cx="90" cy="332" r="5"/></g><circle cx="310" cy="338" r="44" fill="#6b4a1e"/><circle cx="310" cy="338" r="32" fill="#fffdf4"/><g transform="translate(300 120) rotate(12)"><circle r="62" fill="#d62d20"/><circle r="54" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="4 4"/><text y="-18" text-anchor="middle" font-family="Outfit,sans-serif" font-weight="600" font-size="12" fill="#fff">1 LITRE</text><text y="22" text-anchor="middle" font-family="Fraunces,serif" font-weight="700" font-size="42" fill="#ffe45c">₹400</text></g></svg></div></div>
+<div class="marquee"><span>Coconut Oil ✦ Banana Chips ✦ Sharkara Upperi ✦ Murukku ✦ Achappam ✦ Halwa ✦ Unniyappam ✦ Kerala Mixture ✦ </span></div>
+<section><div class="wrap split"><div><span class="script">our story</span><h2>Kerala’s kitchen, delivered.</h2>
+<p>Pure Keralam brings together the everyday staple of every Malayali home, coconut oil, and the savoury snacks and sweets that go with evening tea. One brand, one WhatsApp number, no fuss.</p></div>
+<div class="stat"><span class="tag">Coconut oil, 1 litre</span><h3>₹400</h3><p>Our flagship. Message us to order, and ask about any snack on the menu.</p></div></div></section>
+<section style="padding-block:6vh"><div class="wrap"><div class="deal"><div><span class="script">our affordable price</span><h2>Coconut oil for every Kerala home</h2><p>Good coconut oil shouldn’t be out of reach. Get 1 litre today, and message us for the price of any snack or sweet.</p><p style="margin-top:18px"><a class="btn" href="#contact">Order now</a></p></div><div class="big">₹400<small>per litre</small></div></div></div></section>
+<section><div class="wrap"><svg class="scene" viewBox="0 0 800 300" role="img" aria-label="Kerala backwaters with a boat and coconut palms"><defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd86b"/><stop offset="1" stop-color="#fff0b8"/></linearGradient><pattern id="w" width="60" height="14" patternUnits="userSpaceOnUse"><path d="M0 7q15-8 30 0t30 0" stroke="#bfeee4" fill="none" stroke-width="2"/></pattern><g id="palm"><path d="M0 0 Q-8 -70 6 -130" stroke="#6b4a1e" stroke-width="8" fill="none"/><g fill="#2f7a4a" transform="translate(6 -130)"><path d="M0 0Q-50 -40 -90 -10Q-40 -30 0 0Z"/><path d="M0 0Q-40 -60 -70 -70Q-30 -50 0 0Z"/><path d="M0 0Q5 -60 20 -80Q25 -40 0 0Z"/><path d="M0 0Q50 -55 90 -50Q45 -35 0 0Z"/><path d="M0 0Q60 -20 90 10Q50 -5 0 0Z"/></g><circle cx="3" cy="-126" r="5" fill="#8a5a1a"/></g></defs><rect width="800" height="300" fill="url(#sk)"/><circle cx="570" cy="110" r="52" fill="#f3a712"/><path d="M0 190Q200 160 400 190T800 185V300H0Z" fill="#2f7a4a"/><rect y="205" width="800" height="95" fill="#2b8c86"/><rect y="205" width="800" height="95" fill="url(#w)" opacity=".7"/><use href="#palm" transform="translate(70 215) scale(1.3)"/><use href="#palm" transform="translate(150 210)"/><use href="#palm" transform="translate(730 215) scale(1.2)"/><use href="#palm" transform="translate(660 208) scale(.8)"/><path d="M240 218Q400 255 560 218Q540 240 400 248Q260 240 240 218Z" fill="#3b2410"/><path d="M240 218Q224 198 238 186M560 218Q576 198 562 186" stroke="#3b2410" stroke-width="6" fill="none"/><path d="M310 218Q400 140 490 218Z" fill="#e0a21b"/><path d="M400 160V218M352 176L358 218M448 176L442 218" stroke="#3b2410" stroke-width="3"/></svg></div></section>
+<section class="band"><div class="wrap"><span class="script">pair it with</span><h2>More than oil.</h2>
+<div class="feature"><div><h3 style="font-size:2rem">Snacks &amp; sweets from Kerala</h3><p style="margin-top:8px">Chips, murukku, halwa and more. 11 traditional favourites beside our coconut oil.</p></div><a class="btn" href="#products">See all 12</a></div></div></section>
+</div>
+
+<div class="view" id="products"><section><div class="wrap"><span class="script">the full menu</span><h2>Our products</h2>
+<p style="color:var(--soft)">Pick your favourites, then place your order from the Contact page.</p><div class="grid" id="grid"></div></div></section></div>
+
+<div class="view" id="contact"><section><div class="wrap" style="max-width:720px"><div class="contact"><span class="script">let’s talk</span><h3>Order on WhatsApp</h3>
+<p style="margin-bottom:26px">Tell us what you’d like and how many. We’ll reply to confirm.</p>
+<div class="f"><input id="n" placeholder="Your name"><input id="l" placeholder="Your location"><textarea id="o" rows="4" placeholder="Your order (items and quantity)"></textarea></div>
+<button class="btn" id="send" type="button">Send on WhatsApp</button><p id="msg" style="margin-top:14px;color:var(--gold)"></p></div></div></section></div>
+</main>
+
+<a class="btn fab" href="#contact">Order</a>
+<div class="kasavu"></div><footer><div class="logo" style="font-size:1.4rem">PURE <b style="color:var(--gold2)">KERALAM</b></div><p style="margin-top:6px;opacity:.8">Coconut oil &amp; traditional snacks · Kerala</p></footer>
+
+<script>
+var D=["Golden coconut oil for cooking, frying and everyday use in the Kerala kitchen. Sold by the litre.","Thin, crisp slices of raw banana, fried and lightly salted.","Banana pieces fried and coated in sweet jaggery, a Kerala festival favourite.","Crunchy spiral snack made from rice flour and spices.","Delicate rose-shaped fried cookie, crisp and lightly sweet.","Crisp tube-shaped sweet snack made from rice flour.","A crunchy mix of fried gram-flour bits, peanuts and curry leaves.","Long, crunchy strips of tapioca, fried and salted.","Crisp golden chips of jackfruit, a classic tea-time snack.","Soft, glossy and chewy sweet, a Kerala bakery classic.","Small, soft fried sweet balls of rice and banana, traditionally made with jaggery.","Crisp ribbon-shaped fried snack made from gram and rice flour."];var P=[["Coconut Oil (1 litre)","Staple","₹400"],["Banana Chips","Savoury"],["Sharkara Upperi","Sweet"],["Murukku","Savoury"],["Achappam","Sweet"],["Kuzhalappam","Sweet"],["Kerala Mixture","Savoury"],["Tapioca Chips","Savoury"],["Jackfruit Chips","Savoury"],["Halwa","Sweet"],["Unniyappam","Sweet"],["Ribbon Pakoda","Savoury"]];
+var ART=['<rect x="36" y="6" width="24" height="12" rx="3" fill="#6b4a1e"/><path d="M38 18h20v10q18 8 18 26v22q0 6-6 6H26q-6 0-6-6V54q0-18 18-26Z" fill="#f7d35a" stroke="#8a4b08" stroke-width="2"/><rect x="30" y="48" width="36" height="22" rx="4" fill="#fff6dc"/><circle cx="48" cy="59" r="6" fill="#6b4a1e"/><circle cx="96" cy="68" r="15" fill="#6b4a1e"/><circle cx="96" cy="68" r="9" fill="#fffdf4"/>',
+'<g fill="#f6c443" stroke="#b9780c" stroke-width="2.5"><circle cx="38" cy="38" r="19"/><circle cx="76" cy="32" r="17"/><circle cx="84" cy="64" r="16"/><circle cx="48" cy="68" r="15"/></g><g fill="#d99a0b"><circle cx="38" cy="38" r="4"/><circle cx="76" cy="32" r="3.5"/><circle cx="84" cy="64" r="3.5"/><circle cx="48" cy="68" r="3"/></g>',
+'<g fill="#e9a21a" stroke="#8a4b08" stroke-width="2"><rect x="22" y="30" width="30" height="22" rx="6" transform="rotate(-15 37 41)"/><rect x="55" y="24" width="32" height="22" rx="6" transform="rotate(10 71 35)"/><rect x="40" y="52" width="34" height="22" rx="6" transform="rotate(-5 57 63)"/><rect x="76" y="50" width="26" height="20" rx="6" transform="rotate(18 89 60)"/></g>',
+'<g fill="none" stroke="#d9901a" stroke-width="7" stroke-linecap="round"><circle cx="60" cy="45" r="7"/><circle cx="60" cy="45" r="19"/><circle cx="60" cy="45" r="31"/></g>',
+'<g transform="translate(60 45)" fill="#e3a12a" stroke="#8a4b08" stroke-width="2"><ellipse rx="9" ry="20" cy="-18"/><ellipse rx="9" ry="20" cy="-18" transform="rotate(60)"/><ellipse rx="9" ry="20" cy="-18" transform="rotate(120)"/><ellipse rx="9" ry="20" cy="-18" transform="rotate(180)"/><ellipse rx="9" ry="20" cy="-18" transform="rotate(240)"/><ellipse rx="9" ry="20" cy="-18" transform="rotate(300)"/></g><circle cx="60" cy="45" r="8" fill="#fff1b8" stroke="#8a4b08" stroke-width="2"/>',
+'<g transform="rotate(-20 60 45)" fill="#e5a02a" stroke="#8a4b08" stroke-width="2"><rect x="14" y="20" width="92" height="16" rx="8"/><rect x="14" y="40" width="92" height="16" rx="8"/><rect x="14" y="60" width="92" height="16" rx="8"/></g>',
+'<g stroke="#8a4b08" stroke-width="1.5"><rect x="22" y="30" width="22" height="9" rx="4" fill="#e9a21a" transform="rotate(-20 33 34)"/><rect x="70" y="26" width="24" height="9" rx="4" fill="#f6c443" transform="rotate(25 82 30)"/><ellipse cx="50" cy="55" rx="9" ry="6" fill="#c27a2b"/><ellipse cx="82" cy="58" rx="9" ry="6" fill="#c27a2b" transform="rotate(30 82 58)"/><circle cx="30" cy="62" r="6" fill="#f6c443"/><circle cx="62" cy="38" r="6" fill="#e9a21a"/><path d="M92 40q10 8 4 20q-12-6-4-20Z" fill="#2f7a4a"/><rect x="48" y="70" width="26" height="8" rx="4" fill="#f6c443" transform="rotate(-10 61 74)"/></g>',
+'<g fill="#f6d36a" stroke="#b9780c" stroke-width="2"><rect x="18" y="22" width="84" height="10" rx="5" transform="rotate(-12 60 27)"/><rect x="14" y="38" width="90" height="10" rx="5" transform="rotate(6 60 43)"/><rect x="20" y="54" width="82" height="10" rx="5" transform="rotate(-6 60 59)"/><rect x="18" y="68" width="86" height="10" rx="5" transform="rotate(10 60 73)"/></g>',
+'<g fill="#f2b632" stroke="#b9780c" stroke-width="2"><path d="M18 40Q38 14 58 40Q38 64 18 40Z"/><path d="M58 30Q80 6 100 32Q80 56 58 30Z"/><path d="M44 66Q64 44 86 68Q64 90 44 66Z"/></g><path d="M22 40H54M62 30H96M48 67H82" stroke="#b9780c" stroke-width="1.5"/>',
+'<ellipse cx="60" cy="68" rx="48" ry="12" fill="#fff6dc" stroke="#b9780c" stroke-width="2"/><g fill="#9a4e0c" stroke="#5b2d05" stroke-width="2"><rect x="24" y="38" width="30" height="26" rx="4"/><rect x="58" y="34" width="32" height="28" rx="4"/><rect x="42" y="18" width="28" height="22" rx="4"/></g><g fill="#d98a2b" opacity=".6"><rect x="28" y="41" width="12" height="5" rx="2"/><rect x="62" y="37" width="12" height="5" rx="2"/></g>',
+'<path d="M8 66Q60 36 112 66Q60 90 8 66Z" fill="#2f7a4a"/><g fill="#8a4b08" stroke="#5b2d05" stroke-width="2"><circle cx="38" cy="58" r="14"/><circle cx="72" cy="56" r="14"/><circle cx="55" cy="38" r="14"/></g><g fill="#c98a3a"><circle cx="34" cy="53" r="4"/><circle cx="68" cy="51" r="4"/><circle cx="51" cy="33" r="4"/></g>',
+'<g fill="none" stroke="#e6a21c" stroke-width="7" stroke-linecap="round"><path d="M14 24q14-14 28 0t28 0t28 0"/><path d="M14 44q14-14 28 0t28 0t28 0"/><path d="M14 64q14-14 28 0t28 0t28 0"/></g><path d="M14 80q14-12 28 0t28 0t28 0" fill="none" stroke="#c97d0c" stroke-width="5" stroke-linecap="round"/>'];
+var g=document.getElementById("grid");
+P.forEach(function(p,i){
+g.insertAdjacentHTML("beforeend",'<div class="card"><div class="pic"><svg viewBox="0 0 120 90" role="img" aria-label="'+p[0]+'">'+ART[i]+'</svg></div><span class="tag">'+p[1]+'</span><h3>'+p[0]+'</h3><span class="price">'+(p[2]||"Price on enquiry")+'</span><p class="desc">'+D[i]+'</p></div>')});
+function route(){var h=(location.hash||"#home").slice(1);if(!document.getElementById(h)||h==="grid")h="home";
+document.querySelectorAll(".view").forEach(function(v){v.classList.toggle("on",v.id===h)});
+document.querySelectorAll("nav a").forEach(function(a){a.classList.toggle("on",a.dataset.v===h)});window.scrollTo(0,0)}
+var T=["9198","4060","9644"].join("");function v(id){return document.getElementById(id).value.trim()}
+document.getElementById("send").onclick=function(){var n=v("n"),l=v("l"),o=v("o"),m=document.getElementById("msg");if(!n||!l||!o){m.textContent="Please fill in your name, location and order.";return}
+m.textContent="Opening WhatsApp…";var a=document.createElement("a");a.href="https://wa.me/"+T+"?text="+encodeURIComponent("Hello Pure Keralam!\nName: "+n+"\nLocation: "+l+"\nOrder: "+o);a.target="_blank";a.rel="noopener";document.body.appendChild(a);a.click();a.remove()};
+addEventListener("hashchange",route);route();
+</script></body></html>
